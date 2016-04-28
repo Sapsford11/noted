@@ -112,6 +112,7 @@ footer {
 	padding: 2rem 0;
 	color: white;
 	text-align: center;
+	border-top: 7px solid $green;
 	@include bold_font;
 	p {
 		margin: 0;
