@@ -10,6 +10,7 @@
 	%header
 		.header_inner
 			= link_to image_tag( 'logo.png'), root_path, id: "logo"
+			= link_to "NOTED", root_path, id: "logotext"
 			%nav
 				- if user_signed_in?
 					= link_to "New Note", new_note_path
