@@ -106,6 +106,12 @@ footer {
 		font-size: .85rem;
 		color: $green;
 	}
+	a {
+	color: $green;
+	text-decoration: none;
+	&:hover {
+		color: #ffffff;
+	}
 }
 
 input[type="text"], input[type="email"], input[type="password"], textarea {
@@ -121,4 +127,5 @@ input[type="text"], input[type="email"], input[type="password"] {
 
 textarea {
 	min-height: 200px;
+}
 }
