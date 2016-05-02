@@ -7,9 +7,13 @@
 	%link{:rel => "stylesheet", :href => "//opensource.keycdn.com/fontawesome/4.6.1/font-awesome.min.css"}/
 	= csrf_meta_tags
 	:css
-		.fouc { display:none; }
-	:javascript
-		type="text/javascript"
+    .fouc { display:none; }
+:javascript
+    try {
+        var html=document.getElementByName("html");
+        document.addEventListener("DOMContentLoaded", function(event) { html.class=""; });
+        html.class="fouc";
+    } catch() {}
 %body
 	%header
 		.header_inner
