@@ -8,12 +8,12 @@
 	= csrf_meta_tags
 	:css
 	.fouc { display:none; }
-:javascript
-	try {
-   		var html=document.getElementByName("html");
-        	document.addEventListener("DOMContentLoaded", function(event) { html.class=""; });
-        	html.class="fouc";
-        	} catch() {}
+	:javascript
+		try {
+			var html=document.getElementByName("html");
+			document.addEventListener("DOMContentLoaded", function(event) { html.class=""; });
+			html.class="fouc";
+		} catch() {}
 %body
 	%header
 		.header_inner
