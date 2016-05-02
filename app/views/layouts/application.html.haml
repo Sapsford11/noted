@@ -6,18 +6,10 @@
 	= javascript_include_tag 'application', 'data-turbolinks-track' => true
 	%link{:rel => "stylesheet", :href => "//opensource.keycdn.com/fontawesome/4.6.1/font-awesome.min.css"}/
 	= csrf_meta_tags
-	%style
-		type="text/css"
+	:css
 		.fouc { display:none; }
-	%script
+	:javascript
 		type="text/javascript"
-		try {
-		var html=document.getElementByName("html");
-		document.addEventListener("DOMContentLoaded", function(event) { html.class=""; });
-		html.class="fouc";
-		}
-		catch() {
-		}
 %body
 	%header
 		.header_inner
